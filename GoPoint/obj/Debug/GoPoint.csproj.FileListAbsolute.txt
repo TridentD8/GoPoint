@@ -1,0 +1,6 @@
+C:\Users\Щепелин\Documents\Visual Studio 2017\Projects\GoPoint\GoPoint\bin\Debug\GoPoint.exe.config
+C:\Users\Щепелин\Documents\Visual Studio 2017\Projects\GoPoint\GoPoint\bin\Debug\GoPoint.exe
+C:\Users\Щепелин\Documents\Visual Studio 2017\Projects\GoPoint\GoPoint\bin\Debug\GoPoint.pdb
+C:\Users\Щепелин\Documents\Visual Studio 2017\Projects\GoPoint\GoPoint\obj\Debug\GoPoint.csprojResolveAssemblyReference.cache
+C:\Users\Щепелин\Documents\Visual Studio 2017\Projects\GoPoint\GoPoint\obj\Debug\GoPoint.exe
+C:\Users\Щепелин\Documents\Visual Studio 2017\Projects\GoPoint\GoPoint\obj\Debug\GoPoint.pdb

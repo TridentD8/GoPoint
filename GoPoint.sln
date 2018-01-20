@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoPoint", "GoPoint\GoPoint.csproj", "{629DD01D-4A9E-4B50-BD27-C31324281043}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{629DD01D-4A9E-4B50-BD27-C31324281043}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{629DD01D-4A9E-4B50-BD27-C31324281043}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{629DD01D-4A9E-4B50-BD27-C31324281043}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{629DD01D-4A9E-4B50-BD27-C31324281043}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
