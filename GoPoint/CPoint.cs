@@ -10,6 +10,7 @@ using System.Xml.Linq;
 
 namespace GoPoint
 {
+    [Serializable]
     class CPoint
     {
         public double x;

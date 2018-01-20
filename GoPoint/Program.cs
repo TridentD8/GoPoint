@@ -53,12 +53,13 @@ namespace GoPoint
         }
         static void Exit()
         {
-            Console.WriteLine("Выход...");
+            Console.WriteLine("Пока, пока..");
+            Console.WriteLine("Нажмите любую кнопку.");
         }
         static void Main(string[] args)
         {
 
-
+            //TODO Сделать пункт меню -сохранения в текст
             string[] items = { "Добавить точку", "Вывести все точки","Проложить маршрут", "Удалить точку", "Очистить список" ,"Выход" };
             Action[] methods = { AddPoint, ShowAll, CalcRoute, RemovePoint, RemoveAllPoints, Exit };
             CConsoleMenu myMenu = new CConsoleMenu("Выберите пункт меню", items, 0);
