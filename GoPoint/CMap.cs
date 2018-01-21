@@ -18,7 +18,45 @@ namespace GoPoint
         {
             Load();
         }
-       
+
+        private double GetDistance(CPoint p1, CPoint p2)
+        {
+            return Math.Sqrt(Math.Pow((p2.x - p1.x), 2.0) + Math.Pow((p2.y - p1.y), 2.0));
+        }
+
+        public CPoint GetNearestPoint(CPoint p, List<CPoint> targets)
+        {
+            
+            double[] Distances = new double[targets.Count];
+
+            for (int i = 0; i < targets.Count; i++)
+            {
+                Distances[i] = GetDistance(p, targets[i]);
+            }
+            double minVal = Distances.Min();
+            int indexMin = Array.IndexOf(Distances, minVal);
+
+            return targets[indexMin];
+        }
+
+        public List<CPoint> GetOptimalRout(CPoint p)
+        {
+            List<CPoint> data = new List<CPoint>(points);
+            List<CPoint> result = new List<CPoint>();
+            CPoint vp = p;      
+            result.Add(vp);
+            data.RemoveAll(tp => tp.name == vp.name);
+            do
+            {  
+                vp = GetNearestPoint(result.Last(),data);
+                result.Add(vp);
+                data.RemoveAll(tp => tp.name == vp.name);
+
+            } while (data.Count != 0);
+
+            return result;
+        }
+
         public void AddPoint(CPoint p)
         {
             points.Add(p);

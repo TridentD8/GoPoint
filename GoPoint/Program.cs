@@ -24,7 +24,14 @@ namespace GoPoint
         }
         static void CalcRoute()
         {
-            Console.WriteLine("Здесь будет маршрут");
+            Console.WriteLine("Выберете начальную точку маршрута");
+            ShowAll();
+            string namePoint = Console.ReadLine();
+            CPoint startPoint = map.points.Find(i => i.name == namePoint);
+            var optimalRout=map.GetOptimalRout(startPoint);
+            Console.WriteLine("Оптимальный маршрут: ");
+            foreach (var t in optimalRout)
+                Console.WriteLine(t.name);
         }
         static void RemovePoint()
         {
@@ -66,14 +73,12 @@ namespace GoPoint
             int choice;
 
 
-            do
-            {
-                choice = myMenu.GetUserChoice();
-                methods[choice]();
-                Console.ReadKey();
-            } while (choice != 5);
-
-
+              do
+              {
+                  choice = myMenu.GetUserChoice();
+                  methods[choice]();
+                  Console.ReadKey();
+              } while (choice != 5);
         }
     }
 }
